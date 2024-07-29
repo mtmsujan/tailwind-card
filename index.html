@@ -10,9 +10,25 @@
   </head>
   <body>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
-      <h1 class="text-3xl text-center font-bold mb-10 border border-b-1 border-gray-300 p-2">Tailwind Card</h1>
+      <div
+        class="w-12 h-12 rounded-xl bg-gradient-to-br flex justify-center items-center from-cyan-500 to-cyan-900 mb-8"
+      >
+        <img src="assets/img/logo.png" alt="logo" class="w-8" />
+      </div>
+      <h2
+        class="sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase text-cyan-600 mb-3"
+      >
+        Tailwind Component
+      </h2>
+      <h1
+        class="text-4xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-900 tracking-tight mb-4 md:mb-8"
+      >
+        Responsive Cards
+      </h1>
 
-      <div class="flex flex-wrap mt-20 justify-center gap-4 sm:justify-start sm:gap-6 md:gap-10">
+      <div
+        class="flex flex-wrap mt-20 justify-center gap-4 sm:justify-start sm:gap-6 md:gap-10"
+      >
         <!-- Card 1-->
         <div
           class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -150,7 +166,6 @@
             </a>
           </div>
         </div>
-      </div>
 
         <!-- Product card design-->
         <div
@@ -311,177 +326,448 @@
 
         <!-- product card design tailwind -->
         <div class="flex justify-center space-x-4 my-20">
-            <!-- Card 1 -->
-            <div class="w-80 bg-white shadow rounded">
-              <div class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
-                   style="background-image: url('assets/img/camera.jpg');">
-                <div class="flex justify-between">
-                  <input type="checkbox" />
-                  <button class="text-white hover:text-blue-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                    </svg>
-                  </button>
-                </div>
-                <div>
-                  <span class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none">available</span>
-                </div>
-              </div>
-              <div class="p-4 flex flex-col items-center">
-                <p class="text-gray-400 font-light text-xs text-center">Hammond robotics</p>
-                <h1 class="text-gray-800 text-center mt-1">Item name</h1>
-                <p class="text-center text-gray-800 mt-1">TK. 1299</p>
-                <div class="inline-flex items-center mt-2">
-                  <button class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                    </svg>
-                  </button>
-                  <div class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none">2</div>
-                  <button class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                    </svg>
-                  </button>
-                </div>
-                <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center">
-                  Add to order
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          <!-- Card 1 -->
+          <div class="w-80 bg-white shadow rounded">
+            <div
+              class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+              style="background-image: url('assets/img/camera.jpg')"
+            >
+              <div class="flex justify-between">
+                <input type="checkbox" />
+                <button class="text-white hover:text-blue-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
                   </svg>
                 </button>
-                <div class="flex justify-between w-full mt-4">
-                  <div class="flex items-center text-gray-500">
-                    <input id="input1" type="checkbox" class="mr-2" />
-                    <label for="input1" class="select-none cursor-pointer">Compare</label>
-                  </div>
-                  <div>
-                    <button class="py-1 px-4 bg-white text-gray-600 rounded hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center">
-                      Add to List
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                  </div>
+              </div>
+              <div>
+                <span
+                  class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >available</span
+                >
+              </div>
+            </div>
+            <div class="p-4 flex flex-col items-center">
+              <p class="text-gray-400 font-light text-xs text-center">
+                Hammond robotics
+              </p>
+              <h1 class="text-gray-800 text-center mt-1">Item name</h1>
+              <p class="text-center text-gray-800 mt-1">TK. 1299</p>
+              <div class="inline-flex items-center mt-2">
+                <button
+                  class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 12H4"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                >
+                  2
+                </div>
+                <button
+                  class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <button
+                class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
+              >
+                Add to order
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </button>
+              <div class="flex justify-between w-full mt-4">
+                <div class="flex items-center text-gray-500">
+                  <input id="input1" type="checkbox" class="mr-2" />
+                  <label for="input1" class="select-none cursor-pointer"
+                    >Compare</label
+                  >
+                </div>
+                <div>
+                  <button
+                    class="py-1 px-4 bg-white text-gray-600 rounded hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center"
+                  >
+                    Add to List
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
-          
-            <!-- Repeat the above code for Card 2 and Card 3 -->
-            <!-- Card 2 -->
-            <div class="w-80 bg-white shadow rounded">
-                <div class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
-                     style="background-image: url('assets/img/shoes.jpg');">
-                  <div class="flex justify-between">
-                    <input type="checkbox" />
-                    <button class="text-white hover:text-blue-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div>
-                    <span class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none">available</span>
-                  </div>
+          </div>
+
+          <!-- Repeat the above code for Card 2 and Card 3 -->
+          <!-- Card 2 -->
+          <div class="w-80 bg-white shadow rounded">
+            <div
+              class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+              style="background-image: url('assets/img/shoes.jpg')"
+            >
+              <div class="flex justify-between">
+                <input type="checkbox" />
+                <button class="text-white hover:text-blue-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div>
+                <span
+                  class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >available</span
+                >
+              </div>
+            </div>
+            <div class="p-4 flex flex-col items-center">
+              <p class="text-gray-400 font-light text-xs text-center">
+                Hammond robotics
+              </p>
+              <h1 class="text-gray-800 text-center mt-1">Item name</h1>
+              <p class="text-center text-gray-800 mt-1">TK. 1299</p>
+              <div class="inline-flex items-center mt-2">
+                <button
+                  class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 12H4"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                >
+                  2
                 </div>
-                <div class="p-4 flex flex-col items-center">
-                  <p class="text-gray-400 font-light text-xs text-center">Hammond robotics</p>
-                  <h1 class="text-gray-800 text-center mt-1">Item name</h1>
-                  <p class="text-center text-gray-800 mt-1">TK. 1299</p>
-                  <div class="inline-flex items-center mt-2">
-                    <button class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                      </svg>
-                    </button>
-                    <div class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none">2</div>
-                    <button class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                      </svg>
-                    </button>
-                  </div>
-                  <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center">
-                    Add to order
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                <button
+                  class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <button
+                class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
+              >
+                Add to order
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </button>
+              <div class="flex justify-between w-full mt-4">
+                <div class="flex items-center text-gray-500">
+                  <input id="input1" type="checkbox" class="mr-2" />
+                  <label for="input1" class="select-none cursor-pointer"
+                    >Compare</label
+                  >
+                </div>
+                <div>
+                  <button
+                    class="py-1 px-4 bg-white text-gray-600 rounded hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center"
+                  >
+                    Add to List
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
                     </svg>
                   </button>
-                  <div class="flex justify-between w-full mt-4">
-                    <div class="flex items-center text-gray-500">
-                      <input id="input1" type="checkbox" class="mr-2" />
-                      <label for="input1" class="select-none cursor-pointer">Compare</label>
-                    </div>
-                    <div>
-                      <button class="py-1 px-4 bg-white text-gray-600 rounded hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center">
-                        Add to List
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
-          
-            <!-- Card 3 -->
-            <div class="w-80 bg-white shadow rounded">
-                <div class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
-                     style="background-image: url('assets/img/headphone.jpg');">
-                  <div class="flex justify-between">
-                    <input type="checkbox" />
-                    <button class="text-white hover:text-blue-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div>
-                    <span class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none">available</span>
-                  </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="w-80 bg-white shadow rounded">
+            <div
+              class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+              style="background-image: url('assets/img/headphone.jpg')"
+            >
+              <div class="flex justify-between">
+                <input type="checkbox" />
+                <button class="text-white hover:text-blue-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div>
+                <span
+                  class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >available</span
+                >
+              </div>
+            </div>
+            <div class="p-4 flex flex-col items-center">
+              <p class="text-gray-400 font-light text-xs text-center">
+                Hammond robotics
+              </p>
+              <h1 class="text-gray-800 text-center mt-1">Item name</h1>
+              <p class="text-center text-gray-800 mt-1">TK. 1299</p>
+              <div class="inline-flex items-center mt-2">
+                <button
+                  class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 12H4"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                >
+                  2
                 </div>
-                <div class="p-4 flex flex-col items-center">
-                  <p class="text-gray-400 font-light text-xs text-center">Hammond robotics</p>
-                  <h1 class="text-gray-800 text-center mt-1">Item name</h1>
-                  <p class="text-center text-gray-800 mt-1">TK. 1299</p>
-                  <div class="inline-flex items-center mt-2">
-                    <button class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                      </svg>
-                    </button>
-                    <div class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none">2</div>
-                    <button class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                      </svg>
-                    </button>
-                  </div>
-                  <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center">
-                    Add to order
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                <button
+                  class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <button
+                class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
+              >
+                Add to order
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </button>
+              <div class="flex justify-between w-full mt-4">
+                <div class="flex items-center text-gray-500">
+                  <input id="input1" type="checkbox" class="mr-2" />
+                  <label for="input1" class="select-none cursor-pointer"
+                    >Compare</label
+                  >
+                </div>
+                <div>
+                  <button
+                    class="py-1 px-4 bg-white text-gray-600 rounded hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center"
+                  >
+                    Add to List
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
                     </svg>
                   </button>
-                  <div class="flex justify-between w-full mt-4">
-                    <div class="flex items-center text-gray-500">
-                      <input id="input1" type="checkbox" class="mr-2" />
-                      <label for="input1" class="select-none cursor-pointer">Compare</label>
-                    </div>
-                    <div>
-                      <button class="py-1 px-4 bg-white text-gray-600 rounded hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center">
-                        Add to List
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
-          </div> 
+            </div>
+          </div>
+        </div>
         <!-- product card design tailwind end-->
       </div>
+      <!-- Testimonials Section Card-->
+      <div class="text-center py-10 bg-dark">
+        <div class="flex max-w-5xl mx-auto gap-8 my-20">
+          <div class="bg-lime-400 p-8 rounded-xl mix-blend-luminosity">
+            <img src="assets/img/product-6.jpg" alt="testimonials" class="w-20 h-20 mx-auto rounded-full"/>
+            <h4 class="uppercase text-2xl font-bold mt-4">John Doe</h4>
+            <p class="text-sm leadign-7 my-3 font-light opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. tailwind card design Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas beatae aliquid deserunt nemo</p>
+            <button class="bg-gray-500 py-2.5 px-8 rounded-full text-white">Get In Touch</button>
+          </div>
+
+          <div class="bg-lime-400 p-8 rounded-xl mix-blend-luminosity">
+            <img src="assets/img/product-5.jpg" alt="testimonials" class="w-20 h-20 mx-auto rounded-full"/>
+            <h4 class="uppercase text-2xl font-bold mt-4">John Doe</h4>
+            <p class="text-sm leadign-7 my-3 font-light opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. tailwind card design Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas beatae aliquid deserunt nemo</p>
+            <button class="bg-gray-500 py-2.5 px-8 rounded-full text-white">Get In Touch</button>
+          </div>
+
+          <div class="bg-lime-400 p-8 rounded-xl mix-blend-luminosity">
+            <img src="assets/img/product-4.jpg" alt="testimonials" class="w-20 h-20 mx-auto rounded-full"/>
+            <h4 class="uppercase text-2xl font-bold mt-4">John Doe</h4>
+            <p class="text-sm leadign-7 my-3 font-light opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. tailwind card design Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas beatae aliquid deserunt nemo</p>
+            <button class="bg-gray-500 py-2.5 px-8 rounded-full text-white">Get In Touch</button>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonials Section Card-->
+
+      <!-- tailwind ui ux card -->
+      <div class="bg-gray-200 gap-8 flex justify-center items-center h-screen w-full">
+        <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+          <div class="p-6">
+            <img src="assets/img/rocket.svg" alt="" class="w-12 h-12 mb-4 text-gray-900">
+            <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+              UI/UX Review Check
+            </h5>
+            <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+              Because it's about motivating the doers. Because I'm here to follow my
+              dreams and inspire others.
+            </p>
+          </div>
+        </div> 
+      </div>
+      <!-- tailwind ui ux card -->
     </div>
   </body>
 </html>
